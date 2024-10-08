@@ -1,0 +1,21 @@
+[package]
+name = "pi_rand"
+version = "0.3.0"
+authors = ["vmos <vmosone007@gmail.com>"]
+edition = "2018"
+description = "Custom random number generator"
+repository = "http://ser.yinengyun.com:10082/tech/pi_rand.git"
+license = "MIT OR Apache-2.0"
+keywords = ["pi", "random", "generator"]
+
+[features]
+
+[profile.release]
+debug = false
+lto = true
+
+[dependencies]
+rand_core = "~0.6"
+rand_chacha = "~0.3"
+
+
